@@ -1,0 +1,57 @@
+header
+	+clearfix
+	//+gradient(150deg, $preto, $branco)
+	min-height: 274px
+	background:
+		//image: url('../images/code-java.png')
+		position: top center 
+		repeat: no-repeat
+		color: #4D4D4D
+		attachment: fixed
+		size: cover
+
+	.logo
+		a			
+			float: left
+			font-size: 24px
+			color: $branco
+			margin: 13px 0 0
+			text-decoration: none	
+
+	.menu
+		float: right
+		margin: 15px 0 0
+
+		nav,
+		.social
+			display: inline-block			
+		
+		nav		
+			+breakpoint($tablet)
+				display: none	
+			+breakpoint($celular)
+				display: none
+			ul				
+				li
+					display: inline-block
+					margin: 5px 15px 0 0					
+					a						
+						text-transform: uppercase
+						color: $branco
+						text-decoration: none
+						text-align: center							
+						
+		.social		
+			li
+				display: inline-block
+				margin: 0 10px 0 0 
+				a
+					color: $branco
+					display: block
+					border: 1px solid $branco
+					padding: 4px
+					width: 25px
+					height: 25px
+					line-height: 12px
+					text-align: center
+					+border-radius(120px)

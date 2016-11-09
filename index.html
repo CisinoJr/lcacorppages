@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LCA Soluções</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<header><!-- Topo -->
+		<div class="container">
+	<!--	<div class="logo">
+		 	<img src="images/Legna-Tech.png" alt="Logo topo">
+		 </div> -->
+			 <div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+			 	<h1><a href="index.html"><strong>LCA CORP</strong></a></h1>
+			 </div>
+			 <div class="menu">
+			 	<nav class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.5s">
+			 		<ul>
+			 			<li>
+			 				<a href="index.html">Início</a>
+			 			</li>
+			 			<li>
+			 				<a href="#">Serviços</a>
+			 			</li>
+			 			<li>
+			 				<a href="#">Suporte</a>
+			 			</li>
+			 			<li>
+			 				<a href="#">Contato</a>
+			 			</li>
+			 			<li>
+			 				<a href="#">Sobre</a>
+			 			</li>
+			 		</ul>
+			 	</nav>
+
+			 	<ul class="social wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.5s">
+			 		<li>
+			 			<a href="#"><i class="fa fa-facebook"></i></a>
+			 		</li>
+			 		<li>
+			 			<a href="#"><i class="fa fa-github-alt"></i></a>
+			 		</li>
+			 	</ul>			
+			 </div>			 
+		</div> <!-- Fim Container -->
+	 	
+	 	<!-- Slide -->
+	 	<div id="carousel" class="carousel slide" data-ride="carousel" style="margin-top: 20px">
+	 		<ol class="carousel-indicators">
+	 			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+	 			<li data-target="#carousel" data-slide-to="1"></li>
+	 		</ol>
+			<!-- Abaixo adicionar os itens do slide -->
+	 		<div class="carousel-inner" role="listbox">
+	 			<div class="item active"> <!-- item active -> Classe que define o primeiro item a ser carregado no slide-->
+	 				<img src="images/code.jpg" alt="" style="width: 100%; height: 300px">
+	 				<div class="carousel-caption">
+	 					Primeiro Slide.
+	 				</div>
+	 			</div>
+
+	 			<div class="item"> <!-- item -> Classe que define todos os outros itens do slide, copiar e colar esse bloco e adicionar os itens na ordem desejada. -->
+	 				<img src="images/code-java.png" alt="" style="width: 100%; height: 300px">
+					<div class="carousel-caption">
+						Segundo Slide.
+					</div>
+	 			</div>			 			
+	 		</div><!-- Carousel Inner -->
+
+	 		<a href="#carousel" class="left carousel-control" data-slide="prev">
+	 			<i class="glyphicon glyphicon-chevron-left"></i>
+	 		</a>
+	 		<a href="#carousel" class="right carousel-control" data-slide="next">
+	 			<i class="glyphicon glyphicon-chevron-right"></i>
+	 		</a>
+
+	 	</div><!-- Fim Slide Carousel -->
+
+	</header>
+
+	<main> <!-- Middle -->
+		<section class="sobre">
+			<div class="container">				
+				<h2>Bem vindo!</h2>
+				<div class="texto">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consequatur ab unde, repellendus totam quidem, culpa, ratione deleniti rerum doloribus impedit mollitia laudantium esse optio, suscipit est aspernatur a nesciunt!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nesciunt distinctio, fuga quaerat tenetur iste nulla provident officiis dolor necessitatibus deserunt, nemo ab, autem, quia nihil animi unde porro quis.</p><br>
+					
+					<a href="#" class="botao medio">
+						<i class="fa fa-eye"></i>
+						Continue Lendo
+					</a>
+				</div>
+			</div>	
+		</section>
+	</main><!-- Fim Middle -->
+	
+	<footer><!-- Footer -->
+		<div class="container">
+			
+			<div class="parceiros">
+				<h4>Parceiros:</h4>				
+				<a href="http://www.portallogus.com.br/" target="_blanck">Logus</a>
+				<a href="">Logus</a>
+				<a href="">Logus</a>
+			</div>			
+			
+			<div class="social">
+				<h4>Redes Sociais:</h4>	
+
+				<a href="">
+				<i class="fa fa-facebook"></i>
+				</a>
+
+				<a href="">
+				<i class="fa fa-twitter"></i>
+				</a>
+			</div>
+
+			<div class="copyright">
+			<p><i class="fa fa-copyright"></i> LCA Corp. Todos os direitos reservados.</p>
+			</div>
+
+		</div>
+	</footer><!-- Fim Footer -->
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--	<script>
+		$('#carousel').carousel({
+			interval: 5000
+		})
+	</script> -->
+	<script>
+		var wow = new WOW;
+		wow.init();
+	</script>
+</body>
+</html>
