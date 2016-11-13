@@ -24,24 +24,37 @@ header
 
 		nav,
 		.social
-			display: inline-block			
-		
-		nav		
+			display: inline-block
+
+		nav
 			+breakpoint($tablet)
-				display: none	
+				display: none
+
 			+breakpoint($celular)
 				display: none
-			ul				
+
+			ul
 				li
 					display: inline-block
-					margin: 5px 15px 0 0					
-					a						
-						text-transform: uppercase
+					margin: 0 20px 0 0
+					a
 						color: $branco
-						text-decoration: none
-						text-align: center							
-						
-		.social		
+						text-transform: uppercase
+
+						&:hover
+							&:after
+								width: 40%
+
+						&:after
+							content: ""
+							display: table
+							margin: 5px auto 0
+							width: 0%
+							height: 2px
+							background-color: $branco
+							+transition(.3s)
+							
+		.social			
 			li
 				display: inline-block
 				margin: 0 10px 0 0 
@@ -57,15 +70,14 @@ header
 					+border-radius(120px)
 
 .botao-header
-	h1
-		clear: both
-		margin: 190px auto 30px auto !important
-		font-weight: $light
-		border: 3px solid $branco
-		padding: 20px
-		display: table
-		+breakpoint($celular)
-		+font-size(20px)
+	clear: both
+	margin: 190px auto 30px auto !important
+	font-weight: $light
+	border: 3px solid $branco
+	padding: 20px
+	display: table
+	+breakpoint($celular)
+	+font-size(40px)
 			
 	h1,
 	p

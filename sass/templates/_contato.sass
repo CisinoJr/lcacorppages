@@ -1,0 +1,45 @@
+header
+	min-height: 335px
+	margin: 0 0 25px
+	background:
+		position: top center
+		repeat: no-repeat
+		attachment: fixed
+		size: cover
+
+.contato
+	
+	form		
+		+clearfix
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+
+		.colunas
+			+make-row
+		.col
+			+make-sm-column(6)
+
+		input,
+		select,
+		textarea
+			width: 100%
+			border: 3px solid #7A7A7A
+			padding: 7px
+			text-transform: uppercase
+			+transition(.3s)
+
+			&:hover
+				border-color: $azul-medio
+			&:focus
+				border-color: $azul
+		textarea
+			height: 101px
+
+		button
+			background-color: transparent
+			display: table
+			margin: 0 auto
+
+		.bg-success,
+		.bg-danger
+			padding: 10px

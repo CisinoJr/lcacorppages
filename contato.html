@@ -9,9 +9,27 @@
 	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/geral.css">
-	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/contato.css">
 </head>
 <body>
+
+	<nav class="menu-responsivo">
+ 		<ul>
+ 			<li>
+ 				<a href="#">Início</a>
+ 			</li>
+ 			<li>
+ 				<a href="portfolio.html">Portfólio</a>
+ 			</li>
+ 			<li>
+ 				<a href="contato.html">Contato</a>
+ 			</li>
+ 			<li>
+ 				<a href="sobre.html">Sobre</a>
+ 			</li>
+ 		</ul>
+	</nav>
+
 	<div class="layout">
 		<header><!-- Topo -->
 			<div class="container">
@@ -50,55 +68,66 @@
 				 		</li>
 				 	</ul>			
 				 </div>	
-			</div>
-	 	
-		 	<!-- Slide -->
-		 	<div id="carousel" class="carousel slide" data-ride="carousel" style="margin-top: 20px">
-		 		<ol class="carousel-indicators">
-		 			<li data-target="#carousel" data-slide-to="0" class="active"></li>
-		 			<li data-target="#carousel" data-slide-to="1"></li>
-		 		</ol>
-				<!-- Abaixo adicionar os itens do slide -->
-		 		<div class="carousel-inner" role="listbox">
-		 			<div class="item active"> <!-- item active -> Classe que define o primeiro item a ser carregado no slide-->
-		 				<img src="images/code.jpg" alt="" style="width: 100%; height: 300px">
-		 				<div class="carousel-caption">
-		 					Primeiro Slide.
-		 				</div>
-		 			</div>
 
-		 			<div class="item"> <!-- item -> Classe que define todos os outros itens do slide, copiar e colar esse bloco e adicionar os itens na ordem desejada. -->
-		 				<img src="images/code-java.png" alt="" style="width: 100%; height: 300px">
-						<div class="carousel-caption">
-							Segundo Slide.
-						</div>
-		 			</div>			 			
-		 		</div><!-- Carousel Inner -->
+	 			<div class="botao-header">
+					 <h1><strong><i class="fa fa-envelope"></i> Fale conosco</strong></h1>
+				 </div>		
 
-		 		<a href="#carousel" class="left carousel-control" data-slide="prev">
-		 			<i class="glyphicon glyphicon-chevron-left"></i>
-		 		</a>
-		 		<a href="#carousel" class="right carousel-control" data-slide="next">
-		 			<i class="glyphicon glyphicon-chevron-right"></i>
-		 		</a>
-
-		 	</div><!-- Fim Slide Carousel -->
-
+			</div> <!-- Fim Container -->
 		</header>
 
 		<main> <!-- Middle -->
-			<section class="sobre">
-				<div class="container">				
-					<h2>Bem vindo!</h2>
-					<div class="texto">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consequatur ab unde, repellendus totam quidem, culpa, ratione deleniti rerum doloribus impedit mollitia laudantium esse optio, suscipit est aspernatur a nesciunt!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laboriosam vitae eius fugiat aperiam! Quia dignissimos repellendus, qui debitis dolorum odit voluptatum facilis, molestiae corporis at, ad dolorem itaque eos!</p>
+			<section class="contato">
+				<div class="container">
+					<form>
+						<div class="colunas">
+							<div class="col">
+								<div class="form-group">
+									<input type="text" placeholder="Nome" required>
+								</div>
+							</div>	
 
-						<a href="sobre.html" class="botao medio">
-							<i class="fa fa-eye"></i>
-							Continue Lendo
-						</a>
-					</div>
+							<div class="col">
+								<div class="form-group">
+									<input type="text" placeholder="Email" required>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="form-group">
+									<input type="number" placeholder="Telefone">
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="form-group">
+									<select>
+										<option value="0">Selecione uma opção</option>
+										<option value="1">Orçamento</option>
+										<option value="2">Sugestão</option>
+										<option value="3">Outras Informações</option>
+									</select>
+								</div>
+							</div>
+						</div>
+							
+						<div class="form-group">
+							<textarea placeholder="Mensagem"></textarea>
+						</div>
+
+						<div class="form-group">
+							<button class="botao medio"><i class="fa fa-arrow-right"></i> Enviar Contato</button>
+						</div>
+
+						<p class="bg-success">
+						<i class="fa fa-info-circle"></i> Seu contato foi enviado com sucesso.
+						</p>
+
+						<p class="bg-danger">
+						<i class="fa fa-info-circle"></i> Preencha todos os campos obrigatórios.
+						</p>
+			
+					</form>
 				</div>	
 			</section>
 		</main><!-- Fim Middle -->
@@ -125,7 +154,6 @@
 			</div>
 		</footer><!-- Fim Footer -->
 	</div>
-	
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/wow/dist/wow.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
