@@ -16,7 +16,7 @@
 	<nav class="menu-responsivo">
  		<ul>
  			<li>
- 				<a href="#">Início</a>
+ 				<a href="index.html">Início</a>
  			</li>
  			<li>
  				<a href="portfolio.html">Portfólio</a>
@@ -37,11 +37,13 @@
 				 <div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
 				 	<h1><a href="index.html"><strong>LCA CORP</strong></a></h1>
 				 </div>
-				 <div class="menu wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.5s">
-				 	<nav>
+				 
+				 <!-- Menu -->
+				 <div class="menu">
+				 	<nav  class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.0s">
 				 		<ul>
 				 			<li>
-				 				<a href="#">Início</a>
+				 				<a href="index.html">Início</a>
 				 			</li>
 				 			<li>
 				 				<a href="portfolio.html">Portfólio</a>
@@ -55,15 +57,17 @@
 				 		</ul>
 				 	</nav>
 
-				 	<a class="toggle">
-				 		<i class="fa fa-bars"></i>
+					<a href="javascript:;" class="toggle wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+				 		<span></span>
+				 		<span></span>
+				 		<span></span>
 				 	</a>
 		
 				 	<ul class="social">
-				 		<li>
+				 		<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
 				 			<a href="#"><i class="fa fa-facebook"></i></a>
 				 		</li>
-				 		<li>
+				 		<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
 				 			<a href="#"><i class="fa fa-github-alt"></i></a>
 				 		</li>
 				 	</ul>			
@@ -157,14 +161,16 @@
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/wow/dist/wow.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!--	<script>
-		$('#carousel').carousel({
-			interval: 5000
-		})
-	</script> -->
 	<script>
+		$(function(){
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');				
+				$('.menu-responsivo').toggleClass('ativo');
+				$('.toggle').toggleClass('ativo');	
+			});
+		});	
 		var wow = new WOW;
-		wow.init();
+		wow.init();	
 	</script>
 </body>
 </html>
